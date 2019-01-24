@@ -1,0 +1,144 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    background-color: green;
+    font-family: Arial, Tahoma, Helvetica, "Liberation Sans", sans-serif;
+}
+.calc-wrap{
+    position: relative;
+    display: block;
+    max-width: 300px;
+    min-height: 660px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 5%;
+    background: #FFFAFA;
+    border-radius: 2%;
+}
+
+.calc{
+    padding: 20px;
+}
+
+.calc-title{
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.input-text{
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  .container:hover {
+    transition: .2s;
+    color: green;
+  }
+  
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    transition: 0.2s;
+    background-color: #eee;
+  }
+  
+  .container:hover input ~ .checkmark {
+    transition: 0.2s;
+    background-color: #ccc;
+    
+  }
+
+  .container input:checked ~ .checkmark {
+    transition: 0.2s;
+    background-color: rgb(18, 142, 7);
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .container .checkmark:after {
+    left: 6px;
+    top: 4px;
+    width: 2px;
+    height: 5px;
+    border: solid white;
+    border-width: 0 1px 1px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+.select{
+    width: 100%;
+    height: 35px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.total-price{
+    font-size: 20px;
+}
+
+hr
+{
+    margin-bottom: 5px;
+}
+
+.button-submit{
+    display: block;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    height: 35px;
+    background: rgb(255, 97, 97);
+    border: 0;
+    border-radius: 5%;
+    color: white;
+    transition: .2s;
+}
+
+.button-submit:hover
+{
+    transition: .2s;
+    background: rgb(255, 60, 60);
+}
